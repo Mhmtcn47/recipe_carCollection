@@ -1,0 +1,10 @@
+{% extends "base.jinja" %}
+    
+{%block content %}
+    <h3> Car Makes </h3>
+    <p>{{honda}}, {{ toyota[1] }}</p>
+    <h3> Models </h3>
+    {%for toyota in toyota%}
+    <p>{{ toyota}}</p>
+    {%endfor%}
+{%endblock%}

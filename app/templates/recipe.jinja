@@ -1,0 +1,10 @@
+{% extends "base.jinja" %}
+    
+{%block content %}
+    <h3>Recipes</h3>
+
+     {%for r in recipe %}
+    <p>{{ r }}</p>
+    <p>{{ recipe[r] }}</p>
+    {%endfor%}
+{%endblock%}
